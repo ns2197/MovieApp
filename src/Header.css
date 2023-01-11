@@ -1,0 +1,132 @@
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 0 30px;
+    background-color: #020c1b;
+    box-shadow: 0 5px 15px rgba (0,0,0,0.25);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+  
+  }
+  .title a{
+    color: white;
+    justify-self: start;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  
+  .navbar {
+    z-index: 99;
+  }
+.nav-menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #020c1b ;
+  box-shadow: 0 8px 32px 0 rgba (21, 28, 135, 0.37);
+  backdrop-filter: blur (4px);
+  border-radius: 13px;
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  right: -100%;
+  align-items: stretch;
+  padding: 80px 0 30px 0;
+  margin: 0;
+  z-index: -1;
+  transition: all 450ms ease-in-out;
+  border: 1px solid grey;
+
+
+}
+.nav-menu.active {
+  right:0%
+
+}
+.nav-menu li a{
+  display: block;
+  widows: 100%;
+  padding: 2rem;
+  color: white;
+  border-bottom: 1px solid grey;
+  text-decoration: none;
+}
+.nav-menu li a:hover {
+
+  color: green;
+  transition: 0.5s ease;
+}
+
+  .menu-bars {
+    font-size: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+    display: block;
+    justify-content: flex-end;
+  }
+  .profile {
+    color: white;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  
+  @media screen and (max-width: 770px) {
+    .navbar {
+      z-index: 99;
+    }
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #020c1b ;
+    box-shadow: 0 8px 32px 0 rgba (21, 28, 135, 0.37);
+    backdrop-filter: blur (4px);
+    border-radius: 13px;
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    right: -100%;
+    align-items: stretch;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    z-index: -1;
+    transition: all 450ms ease-in-out;
+    border: 1px solid grey;
+  
+  }
+  .nav-menu.active {
+    right:0%
+  
+  }
+  .nav-menu li a{
+    display: block;
+    widows: 100%;
+    padding: 2rem;
+    color: white;
+    border-bottom: 1px solid grey;
+  }
+  .nav-menu li a:hover {
+  
+    color: green;
+    transition: 0.5s ease;
+  }
+  .menu-bars{
+    display: block;
+  }
+  }
+
+
+
+  
+  
